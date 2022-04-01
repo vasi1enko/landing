@@ -5,6 +5,10 @@ color: white;
 font-family: 'Roboto', sans-serif;
 font-style: normal;
 }
+a {
+text-decoration: none;
+color: white;
+}
 .body {
 max-width: 1200px;
 display: flex;
@@ -23,6 +27,10 @@ border: 1px solid red;
 .footer_wrapper {
 padding-left: 30px;
 padding-right: 30px;
+}
+.bullet_wrapper {
+padding-top: 50px;
+padding-bottom: 50px;
 }
 .hello_block {
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/back.jpg');
@@ -65,7 +73,41 @@ font-size: 30px;
 color: red; 
 }
 .footer_wrapper {
-border: 1px solid red;
+border-top: 1px solid white;
+}
+.footer_ins_wrapper {
+margin: 50px 0px 50px 0px;
+display: flex;
+justify-content: space-between;
+}
+.foto_contact_box {
+display: flex;
+}
+.foto_box {
+}
+.contact_box {
+margin-left: 50px;
+}
+.contact_action {
+display: flex;
+flex-direction: column;
+}
+.tel_box,
+.mail_box {
+padding: 5px;
+}
+.social_box {
+display: flex;
+flex-direction: column;
+}
+.social_ico {
+padding: 5px;
+}
+.footer_brand {
+font-size: 20px;
+}
+.footer_coryright {
+font-size: 18px;
 }
 /* ------------------------------------------------------
 @media (max-width: 768px) {
@@ -98,4 +140,35 @@ position: relative;
    margin-left: 3%;
   margin-top: 3%;
   }
+
+/* ------------- кодуем над футером в 320 --------------------*/
+.footer_wrapper {
+border-top: 1px solid white;
+}
+.footer_ins_wrapper {
+margin: 50px 0px 50px 0px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.foto_contact_box {
+display: flex;
+flex-direction: column;
+}
+.foto_box {
+margin: 3px;
+align-self: center;
+}
+.contact_box {
+align-self: center;
+margin: 3px;
+}
+.social_box {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.social_ico {
+  padding: 3px;
+}
 }
