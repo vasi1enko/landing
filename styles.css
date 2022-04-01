@@ -1,0 +1,101 @@
+html,
+body {
+background-color: rgb(0, 0, 0);
+color: white;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+}
+.body {
+max-width: 1200px;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+}
+.wrapper, {
+border: 1px solid red;
+  
+}
+.bullet_wrapper,
+.faq_wrapper,
+.mywork_wrapper,
+.tarif_wrapper,
+.header_wrapper, 
+.footer_wrapper {
+padding-left: 30px;
+padding-right: 30px;
+}
+.hello_block {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/back.jpg');
+background-size: cover;
+/*background-position: center -90px; - сдвиг картинки для меню */ 
+height: 720px;
+
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+}
+.hello_text {
+font-size: 30px;
+position: absolute;
+text-transform: uppercase;
+margin-left: 5%;
+margin-top: 5%;
+}
+.brand_text {
+text-transform: uppercase;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 34px;
+
+}
+.brand_text_light {
+text-transform: uppercase;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 200;
+font-size: 30px;
+line-height: 34px;
+
+}
+.red_words {
+text-transform: uppercase;
+font-size: 30px;
+color: red; 
+}
+.footer_wrapper {
+border: 1px solid red;
+}
+/* ------------------------------------------------------
+@media (max-width: 768px) {
+ ------------------------------------------------------ 
+@media (max-width: 360px) {
+.font-size: 10px {
+------------------------------------------------------ 
+@media (max-width: 320px) {
+.header_wrapper,
+.main_wrapper, 
+.footer_wrapper {
+border: 1px solid yellow;
+padding-left: 6px;
+padding-right: 6px;
+}*/
+
+@media (max-width: 320px) {
+.hello_block {
+background-image: url('img/back_w320.jpg'); 
+background-size: cover;
+/*background-position: center -90px; - сдвиг картинки для меню */ 
+height: 407px;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+}
+.hello_text {
+  font-size: 20px;
+  position: absolute;
+   margin-left: 3%;
+  margin-top: 3%;
+  }
+}
