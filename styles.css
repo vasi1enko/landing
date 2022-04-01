@@ -16,14 +16,32 @@ margin-left: auto;
 margin-right: auto;
 }
 .wrapper, {
-border: 1px solid red;
+
+}
+.navigator_box {
+
+display: flex;
+
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.link_box {
+display: flex;
+
+list-style: none;
+flex-wrap: wrap;
+}
+.li_box {
   
+  padding: 10px;
+  margin: 0px 15px 0px 15px;
+  text-transform: uppercase;
 }
 .bullet_wrapper,
 .faq_wrapper,
 .mywork_wrapper,
 .tarif_wrapper,
-.header_wrapper, 
+ 
 .footer_wrapper {
 padding-left: 30px;
 padding-right: 30px;
@@ -142,6 +160,105 @@ position: relative;
   }
 
 /* ------------- кодуем над футером в 320 --------------------*/
+.footer_wrapper {
+border-top: 1px solid white;
+}
+.footer_ins_wrapper {
+margin: 50px 0px 50px 0px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.foto_contact_box {
+display: flex;
+flex-direction: column;
+}
+.foto_box {
+margin: 3px;
+align-self: center;
+}
+.contact_box {
+align-self: center;
+margin: 3px;
+}
+.social_box {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.social_ico {
+  padding: 3px;
+}
+}
+
+
+@media (max-width: 375px) {
+.hello_block {
+background-image: url('img/back_w320.jpg'); 
+background-size: cover;
+/*background-position: center -90px; - сдвиг картинки для меню */ 
+height: 407px;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+}
+.hello_text {
+  font-size: 20px;
+  position: absolute;
+   margin-left: 3%;
+  margin-top: 3%;
+  }
+
+/* ------------- кодуем над футером в 375 --------------------*/
+.footer_wrapper {
+border-top: 1px solid white;
+}
+.footer_ins_wrapper {
+margin: 50px 0px 50px 0px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.foto_contact_box {
+display: flex;
+flex-direction: column;
+}
+.foto_box {
+margin: 3px;
+align-self: center;
+}
+.contact_box {
+align-self: center;
+margin: 3px;
+}
+.social_box {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.social_ico {
+  padding: 3px;
+}
+}
+
+@media (max-width: 414px) {
+.hello_block {
+background-image: url('img/back_w320.jpg'); 
+background-size: cover;
+/*background-position: center -90px; - сдвиг картинки для меню */ 
+height: 407px;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+}
+.hello_text {
+  font-size: 20px;
+  position: absolute;
+   margin-left: 3%;
+  margin-top: 3%;
+  }
+
+/* ------------- кодуем над футером в 414 --------------------*/
 .footer_wrapper {
 border-top: 1px solid white;
 }
