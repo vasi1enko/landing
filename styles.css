@@ -15,24 +15,17 @@ display: flex;
 margin-left: auto;
 margin-right: auto;
 }
-.wrapper, {
-
-}
 .navigator_box {
-
 display: flex;
-
 justify-content: space-between;
 flex-wrap: wrap;
 }
 .link_box {
 display: flex;
-
 list-style: none;
 flex-wrap: wrap;
 }
 .li_box {
-  
   padding: 10px;
   margin: 0px 15px 0px 15px;
   text-transform: uppercase;
@@ -41,12 +34,19 @@ flex-wrap: wrap;
 .faq_wrapper,
 .mywork_wrapper,
 .tarif_wrapper,
- 
 .footer_wrapper {
 padding-left: 30px;
 padding-right: 30px;
 }
-.bullet_wrapper {
+.unit_wrapper {
+ display: flex; 
+ flex-wrap: wrap;  
+ justify-content: space-around;     
+}
+.bullet_wrapper,
+.tarif_wrapper,
+.mywork_wrapper,
+.faq_wrapper {
 padding-top: 50px;
 padding-bottom: 50px;
 }
@@ -67,27 +67,24 @@ text-transform: uppercase;
 margin-left: 5%;
 margin-top: 5%;
 }
-.brand_text {
+.brand_text,
+.red_words {
 text-transform: uppercase;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 600;
 font-size: 30px;
 line-height: 34px;
-
 }
 .brand_text_light {
 text-transform: uppercase;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 200;
-font-size: 30px;
-line-height: 34px;
-
+font-size: 18px;
+line-height: 24px;
 }
 .red_words {
-text-transform: uppercase;
-font-size: 30px;
 color: red; 
 }
 .footer_wrapper {
@@ -124,9 +121,32 @@ padding: 5px;
 .footer_brand {
 font-size: 20px;
 }
-.footer_coryright {
+.footer_coryright,
+.brand_text_p,
+.brand_text_light {
 font-size: 18px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 21px
 }
+.brand_text_cssse {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+}
+.unit { 
+max-width: 280px; 
+min-width: 250px;  
+margin-right: auto; 
+margin-left: auto;  
+text-align: center;       
+}
+  
+
 /* ------------------------------------------------------
 @media (max-width: 768px) {
  ------------------------------------------------------ 
